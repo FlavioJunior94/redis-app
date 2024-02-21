@@ -16,7 +16,7 @@ pipeline{
                 sh 'sleep 10'
             }
         }
-        stagep('teste de aplicação'){
+        stage('teste de aplicação'){
             steps{
                 sh 'teste-app.sh'
             }
