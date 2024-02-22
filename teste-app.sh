@@ -1,7 +1,7 @@
 #/bin/bash
-RESULT="'wget -qO- http://localhost:8001"
+RESULT="`wget -qO- http://localhost:8001`"
 wget -q localhost:8081
-if [$? -eq 0]
+if [ $? -eq 0 ]
 then
     echo 'ok -servico no ar!'
 
